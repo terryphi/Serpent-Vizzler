@@ -1,0 +1,23 @@
+
+surf 1  sph 0.0 0.0 0.0 20.0  % Pressure tube inner wall
+surf 9  sph 0.0 0.0 0.0 50.0  % Pressure tube inner wall
+surf 10 cube 0.0 0.0 0.0 10.0
+
+cell 1 0 inner -10
+cell 2 0 fuel  -1 10
+cell 3 0 void  -9 1
+cell 99 0 outside 9
+
+mat fuel    -10 rgb 255 0 0
+92235.09c    -1.0
+
+mat inner -5 rgb 0 255 255
+92235.09c    -1.0
+
+
+set acelib "./xs/sss_jeff311u.xsdata"
+
+set pop 200 50 20
+
+plot 1 500 500 -51
+%VIZZLE
