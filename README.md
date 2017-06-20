@@ -1,6 +1,2 @@
 # Serpent-Vizzler
-# Serpent-Vizzler
-# Serpent-Vizzler
-# Serpent-Vizzler
-# Serpent-Vizzler
-# Serpent-Vizzler
+Visualization Tool For Serpent
