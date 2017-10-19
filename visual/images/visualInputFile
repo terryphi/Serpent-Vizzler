@@ -1,0 +1,67 @@
+set title "Creating source for a time dependent simulation"
+set acelib "./xs/sss_jeff311u.xsdata"
+% --- Geometry is just a cube
+
+surf 1  cylz 0.0 0.0 10.0  % Pressure tube inner wall
+surf 2  cube 0.0 0.0 0.0 90.0  % Pressure tube inner wall
+
+% --- Cell definitions:
+
+cell 1 0  fuel  -1      % Pin lattice
+cell 2 0 mod -2 1
+cell 99 0 outside 2
+
+% --- Fuel material is a homogenized LWR material:
+
+mat fuel    -12.4375010 rgb 255 0 0
+ 8016.03c    -1.18473E+1
+ 92235.03c    -95.27118E-1
+ 92238.03c    -9.75256E+1
+
+mat mod  -2.226 rgb 0 255 0
+ 6000.03c    -1
+
+% --- will need to fix this
+%ifc "../../Documents/dyn/Problem3/ifc1"
+%ifc "../../Documents/dyn/Problem3/ifc2"
+
+set power 1.0
+
+% --- Neutron population:
+
+% --- Large population size: (produced approx. 60M neutron and 40M precursor source points)
+set pop 48000 40 2
+
+% --- Save neutron and precursor source to "./source"-files
+
+set savesrc "./source"
+
+% --- Do not generate group constants
+
+set gcu -1
+
+% --- Do not use implicit capture, nxn, or fission
+
+set impl 0 0 0
+
+%VIZZLE
+plot 1 20 20 -90.0
+plot 1 20 20 -80.52631578947368
+plot 1 20 20 -71.05263157894737
+plot 1 20 20 -61.578947368421055
+plot 1 20 20 -52.10526315789474
+plot 1 20 20 -42.631578947368425
+plot 1 20 20 -33.15789473684211
+plot 1 20 20 -23.684210526315795
+plot 1 20 20 -14.21052631578948
+plot 1 20 20 -4.736842105263165
+plot 1 20 20 4.73684210526315
+plot 1 20 20 14.210526315789465
+plot 1 20 20 23.68421052631578
+plot 1 20 20 33.157894736842096
+plot 1 20 20 42.63157894736841
+plot 1 20 20 52.10526315789474
+plot 1 20 20 61.57894736842104
+plot 1 20 20 71.05263157894734
+plot 1 20 20 80.52631578947367
+plot 1 20 20 90.0

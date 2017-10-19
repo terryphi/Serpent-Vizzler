@@ -1,0 +1,73 @@
+
+  _                   .-=-.           .-=-.          .-==-.       
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<   
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`       
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /            
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /             
+   `-.-`     '.____.'       `._____.'       `.____.'              
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.28 (February 6, 2017) -- Contact: serpent@vtt.fi
+
+ - Reference: J. Leppanen, et al. "The Serpent Monte Carlo code: Status,
+              development and applications in 2013." Ann. Nucl. Energy,
+              82 (2015) 142-150.
+
+ - Compiled Jun  5 2017 12:42:30
+
+ - MPI Parallel calculation mode not available
+
+ - OpenMP Parallel calculation mode available
+
+ - Geometry and mesh plotting available
+
+ - Default data path not set
+
+Begin calculation on Wed Oct 18 20:52:41 2017
+
+Reading input file "/home/robot3/Documents/Serpent-Vizzler/visual/visualInputFile"...
+
+Checking duplicate input definitions...
+OK.
+
+Creating geometry...
+OK.
+
+Counting geometry zones...
+
+Processing cells...
+OK.
+
+Linking materials to geometry...
+OK.
+
+Counting cells...
+OK.
+
+Plotting geometry:
+
+   0% complete
+   5% complete
+  10% complete
+  15% complete
+  20% complete
+  25% complete
+  30% complete
+  35% complete
+  40% complete
+  45% complete
+  50% complete
+  55% complete
+  60% complete
+  65% complete
+  70% complete
+  75% complete
+  80% complete
+  85% complete
+  90% complete
+  95% complete
+ 100% complete
+
